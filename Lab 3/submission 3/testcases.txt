@@ -1,0 +1,112 @@
+140050007, 140050002
+Neeladrishekhar Kanjilal, Deep Modh
+
+--------------------------------------------------------
+Demo of some commands : 
+-------------------------------------------------------
+
+1.
+Hello> getfl files/foo0.txt
+
+pressing ctrl+c after some time
+
+out put :
+
+hello world the new file 388 0 anoth
+hello world the new file 389 0 anoth
+hello world the new file 390 0 anoth
+^CRecieved SIGINT ...
+hello w
+Received SIGINT; dowmloaded 14336 bytes so far.
+
+
+2.
+Hello> getsq files/foo0.txt files/foo1.txt
+
+pressing ctrl+c after some time
+
+out put :
+ not print
+ all download must terminate
+
+
+3.
+Hello> getfl files/foo0.txt | grep 11
+
+hello world the new file 11 0 anoth
+hello world the new file 110 0 anoth
+hello world the new file 111 0 anoth
+hello world the new file 112 0 anoth
+hello world the new file 113 0 anoth
+
+
+4.
+Hello> getpl files/foo0.txt files/foo1.txt
+^CRecieved SIGINT ...
+
+
+Received SIGINT; dowmloaded 6144 bytes so far.
+Received SIGINT; dowmloaded 6144 bytes so far.
+
+
+
+
+5. 
+Hello> server localhost 5000
+Hello> getbg files/foo0.txt
+Hello> getbg files/foo0.txt
+Hello> 
+Hello> 
+Hello> 
+Hello> ^CRecieved SIGINT ... Press enter to get back to shell prompt
+
+Hello> 
+ ... background download process pid-7186 finished
+ ... background download process pid-7188 finished
+Hello> 
+Hello> getbg files/foo0.txt
+Hello> getbg files/foo0.txt
+Hello> getbg files/foo0.txt
+Hello> getbg files/foo0.txt
+Hello> exit
+Backround process pid-7194 killed
+Backround process pid-7196 killed
+Backround process pid-7198 killed
+Backround process pid-7200 killed
+$ 
+
+
+
+
+6.
+Hello> echo how are you?
+how are you?
+Hello> 
+
+
+
+7.
+Hello> 
+Hello> 
+Hello> cd files
+Hello> 
+Hello> 
+Hello> ls
+1.txt  2.txt  foo0.txt	foo1.txt
+Hello> 
+Hello> 
+Hello> 
+
+
+8.
+Hello> getpl
+Incorrect usage
+Use as: getpl file1 file2 file3 ...
+Hello> 
+
+9.
+Hello> exi
+No such file or directory
+Hello> 
+
+
