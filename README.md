@@ -11,3 +11,4 @@ This contains work done under course of "Operating Systems" during Autumn 2016.
 |5|New Scheduler in xv6|
 |6|Copy-on-Write Fork in xv6|
 |7|Understanding Filesystems|
+|8|Building Your Own Filesystem with FUSE|
